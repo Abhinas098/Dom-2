@@ -38,17 +38,16 @@
     }
     function onscreen(obj){
         const Parent = document.getElementById('Details');
+        //using innerHtml
         // Parent.innerHTML=Parent.innerHTML+`<li>${obj.name} - ${obj.email} - ${obj.Phone}</li>`
 
+        // Or  
         const child = document.createElement('li');
         child.textContent =obj.name +'-'+ obj.email+'-'+ obj.Phone;
         Parent.appendChild(child)
 
-
-
     }
 </script>
-
-    
+   
 </body>
 </html>
